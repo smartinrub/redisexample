@@ -1,6 +1,11 @@
 # redisexample
 ## Getting Started
 ### Setup Redis Server
+- Install Redis
+Mac OS:
+```bash
+brew install redis
+```
 - Start server
 ```bash
 redis-server
