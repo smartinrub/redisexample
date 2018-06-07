@@ -9,8 +9,11 @@ public class JedisSingleton {
     private static JedisPool pool;
 
     private JedisSingleton() {
+        JedisPoolConfig config = new JedisPoolConfig();
+        // Size of the pool
+        config.setMaxTotal(16);
         pool = new JedisPool(
-                new JedisPoolConfig(),
+                config,
                 "localhost",
                 6379,
                 Protocol.DEFAULT_TIMEOUT,
