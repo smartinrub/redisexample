@@ -1,7 +1,6 @@
 # redisexample
-
-### Getting Started
-## Setup Redis Server
+## Getting Started
+### Setup Redis Server
 - Start server
 ```bash
 redis-server
